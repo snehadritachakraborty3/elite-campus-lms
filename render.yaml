@@ -1,12 +1,11 @@
-services:
-  # 1. Database (PostgreSQL)
-  - type: database
-    name: lms-db
+databases:
+  - name: lms-db
     plan: free
     region: ohio
     databaseName: lmsdb
     user: lmsadmin
 
+services:
   # 2. Backend (Spring Boot Docker)
   - type: web
     name: lms-backend
